@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Form - Deltarune</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body background="wall.png">
+
+<script>
+function updateClock() {
+    const now = new Date();
+    const time = now.toLocaleTimeString();
+    document.getElementById("clock").innerText = time;
+}
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+
+<header class="top-nav">
+    <div class="nav-container">
+        <!-- LEFT -->
+        <div class="nav-left">
+            <img src="dellvf.png" alt="Icon" class="nav-icon">
+            <img src="dellogo.png" alt="Deltarune Logo" class="nav-logo">
+        </div>
+
+        <!-- CENTER -->
+        <nav class="nav-center">
+            <a href="home.html">Home</a>
+            <a href="story.html">Chapters</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Survey</a>
+        </nav>
+    </div>
+
+    <!-- CLOCK BELOW NAV -->
+    <div class="nav-clock">
+        <span id="clock">00:00:00</span>
+    </div>
+</header>
+<br>
+<div class="container">
+    <div class="card">
+
+        <h2>Contact / Feedback</h2>
+        <p>
+            Punya saran, kritik, atau ingin berdiskusi tentang
+            <strong>DELTARUNE</strong>?  
+            Silakan isi formulir di bawah ini.
+        </p>
+
+        <form>
+
+            <!-- NAMA -->
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama lengkap" required>
+
+            <!-- EMAIL -->
+            <label>Email</label>
+            <input type="email" placeholder="contoh@email.com" required>
+
+            <!-- USIA -->
+            <label>Usia</label>
+            <input type="number" placeholder="Usia kamu" min="10" max="60">
+
+            <!-- FAVORIT -->
+            <label>Karakter Favorit</label>
+            <select>
+                <option>Pilih karakter</option>
+                <option>Kris</option>
+                <option>Susie</option>
+                <option>Ralsei</option>
+                <option>Noelle</option>
+                <option>Berdly</option>
+                <option>Spamton</option>
+                <option>Lainnya</option>
+            </select>
+            <br>
+            <br> <br>
+            <!-- CHAPTER -->
+            <label>Chapter yang Sudah Dimainkan</label>
+            <div>
+                <input type="checkbox"> Chapter 1  
+                <input type="checkbox"> Chapter 2  
+                <input type="checkbox"> Snowgrave Route
+            </div>
+            <br>
+            <br>
+            <!-- RATING -->
+            <label>Seberapa Suka Deltarune?</label>
+            <div>
+                <input type="radio" name="rate"> Biasa saja  
+                <input type="radio" name="rate"> Suka  
+                <input type="radio" name="rate"> Sangat Suka  
+                <input type="radio" name="rate"> Masterpiece
+            </div>
+            <br>
+            <!-- PESAN -->
+            <label>Pesan / Feedback</label>
+            <textarea rows="5" placeholder="Tulis pesan kamu di sini..."></textarea>
+
+
+            <!-- BUTTON -->
+            <button type="submit">Kirim Pesan</button>
+
+        </form>
+
+    </div>
+</div>
+
+
+  <div class="center-image" align="center"> 
+        <img src="meme-spamton.gif" alt="Spamton Meme" width="60" height="60">
+    </div>
+
+<section class="pre-footer">
+    <div class="pre-footer-container">
+
+        <div class="pre-footer-box">
+            <h3>Deltarune Wiki</h3>
+            <p>
+                Sebuah website penggemar yang membahas cerita, karakter,
+                dan misteri dunia <strong>DELTARUNE</strong>.
+            </p>
+            <p>
+                ⚠️ Mengandung spoiler cerita.
+            </p>
+        </div>
+
+        <!-- CENTER -->
+        <div class="pre-footer-box">
+            <h3>Quick Links</h3>
+            <ul class="quick-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="story.html">Chapters</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Survey</a></li>
+            </ul>
+        </div>
+
+        <div class="pre-footer-box">
+            <h3>Ikuti Kami</h3>
+            <div class="social-icons">
+                <a href="https://deltarune.com" target="_blank" title="Official Deltarune Website"><img src="dellvf.png" width="20px" height="20px" alt=""></a>
+
+                <a href="https://twitter.com/tobyfox" target="_blank" title="Toby Fox Official Twitter / X"><img src="twitter-new-2023-x-logo-white-background-vector_1017-45422.avif"  width="20px" height="20px" alt=""></a>
+
+                <a href="https://www.instagram.com/tobyfoxdog/" target="_blank" title="Toby Fox Official Instagram"><img src="Instagram_logo_2022.svg.webp"  width="20px" height="20px" alt=""></a>
+
+                <a href="https://www.youtube.com/@tobyfoxofficial" target="_blank" title="Toby Fox Official YouTube"><img src="Youtube_logo.png"  width="20px" height="15px" alt=""></a>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+&copy; 2026 Arindra P.S 251011700844 - Deltarune By Tobyfox 2018 &copy;
+</footer>
+
+</body>
+</html>
